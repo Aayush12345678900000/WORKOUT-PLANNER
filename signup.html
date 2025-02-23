@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="signup">
+    <div class="form">
+        <h1>Sign Up</h1>
+        {% if error %}
+        <div style="color: red; margin-bottom: 10px;">{{ error }}</div>
+        {% endif %}
+    <form action="/signup" method="post">
+        <b><label for="email">Email</label></b>
+        <input type="email" name="email" id="email" autocomplete="email" required><br><br>
+        <b><label for="password">Password</label></b>
+        <input type="password" name="password" id="password" autocomplete="new-password" required><br><br>
+        <b><label for="confirm_password">Confirm Password</label></b>
+        <input type="password" name="confirm_password" id="confirm_password" autocomplete="new-password" required><br>
+        <a href="/login">Alerady have a Account? Login</a><br><br>
+        <button type="submit">Sign Up</button>
+    </form>
+</body>
+</html>

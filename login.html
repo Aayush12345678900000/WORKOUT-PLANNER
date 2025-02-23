@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="login">
+    <div class="form">
+        <h1>Login</h1>
+    <form action="/login" method="post">
+        <b><label for="email">Email</label></b>
+        <input type="email" name="email" id="email" autocomplete="email" required><br><br>
+        <b><label for="password">Password</label></b>
+        <input type="password" name="password" id="password" autocomplete="current-password" required>
+        <div style="display: flex; align-items: center;">
+            <input type="checkbox" name="Remember me " id="remember">
+            <label for="remember" style="margin-left: 5px;">Remember me</label>
+        </div><br>
+        <a href="/signup">Don't have an account? Sign up</a><br><br>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>

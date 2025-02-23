@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitforALL</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/icon1.png') }}">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <h1>FitforALL</h1>
+        </div>
+        <div class="menu">
+            <a href="/login">Login</a>
+            <a href="/signup">Sign Up</a>
+        </div>
+    </header><br>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to FitforALL</h2>
+                <p>Your ultimate workout planner to achieve your fitness goals.</p>
+                <a href="/signup" class="cta-button">Get Started</a>
+            </div>
+        </section>
+        <section class="features">
+            <div class="feature">
+                <h3>Personalized Plans</h3>
+                <p>Custom workout plans tailored to your fitness level and goals.</p>
+            </div>
+            <div class="feature">
+                <h3>Track Progress</h3>
+                <p>Monitor your progress and stay motivated with our tracking tools.</p>
+            </div>
+            <div class="feature">
+                <h3>Expert Guidance</h3>
+                <p>Access expert advice and tips to maximize your results.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 FitforALL. All rights reserved.</p>
+    </footer>
+</body>
+</html>
